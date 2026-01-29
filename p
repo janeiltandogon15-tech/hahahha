@@ -1,13 +1,16 @@
-# even_odd.py
-while True:
-    number = int(input("Enter a number: "))
+#include <stdio.h>
 
-    if number % 2 == 0:
-        print(f"{number} is an even number.")
-    else:
-        print(f"{number} is an odd number.")
+int main() {
+    int number;
 
-    choice = input("Do you want to try again? (yes/no): ")
-    if choice.lower() != "yes":
-        print("Program ended.")
-        break
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    if (number % 2 == 0) {
+        printf("The number is even.\n");
+    } else {
+        printf("The number is odd.\n");
+    }
+
+    return 0;
+}
